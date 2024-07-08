@@ -26,7 +26,7 @@ def test_changhuxian(test_login):
     text=test_login.find_element(By.XPATH,'//*[@id="app"]/div/div/div[2]/div[2]/div[2]/div/div/div[2]/div[1]/div[2]/table/tbody/tr[1]/td[7]/div/div').text
     assert "后定价" in text
     # 截屏,保存在picture文件夹下
-    test_login.save_screenshot('picture/success.png')
+    test_login.save_screenshot('F:/PycharmProjects/huliyi/picture/changhuxian_success.png')
 
 if __name__ == '__main__':
-    pytest.main(['-vs'])
+    pytest.main(['-vs','test_changhuxian.py'])

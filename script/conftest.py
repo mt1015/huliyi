@@ -15,8 +15,9 @@ from selenium.webdriver.common.keys import Keys
 #     test_driver.find_element(By.ID, "kw").send_keys('python')
 #     test_driver.find_element(By.ID, "su").click
 
-
+#在方法前面加个 @pytest.fixture 装饰器，加了这个装饰器的方法可以以参数的形式传入到方法里面执行。
 @pytest.fixture()
+#登录护理易后台
 def test_login():
     browser = webdriver.Chrome()
     # 打开护理易登录页
